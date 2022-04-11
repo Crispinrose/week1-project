@@ -1,0 +1,123 @@
+body {
+   background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+}
+#top-container {
+   display: flex;
+   align-items: center;
+}
+nav {
+   display: inline-block;
+   margin-right: auto;
+}
+#logo {
+   display: inline-block;
+   margin-right: 121px;
+}
+.rectangle {
+   width: 20px;
+   border-radius: 20px;
+   display: inline-block;
+}
+#rectangle1 {
+   height: 20px;
+   background: #9C69E2;
+}
+#rectangle2 {
+   height: 35px;
+   background: #F063B8;
+}
+#unordered {
+   list-style-type: none;
+}
+#about {
+   width: 53px;
+   height: 30px;
+   font-family: 'Avenir';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 16px;
+   line-height: 160%;
+   display: inline-block;
+   color: #212353;
+}
+.tag {
+   font-family: 'Avenir';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 160%;
+   display: inline-block;
+   color: #4B5D68;
+}
+#help {
+    width: 35px;
+    height: 26px;
+}
+#features {
+   width: 63px;
+   height: 26px;
+}
+#signup {
+  width: 51px;
+   height: 26px;
+}
+#request {
+   width: 210px;
+   height: 60px;
+   background: #fff;
+   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+   border-radius: 50px;
+   display: inline-block;
+}
+h1#savedata {
+   font-family: 'Helvetica';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 80px;
+   line-height: 110%;
+   width: 645px;
+   height: 184px;
+   display: flex;
+   align-items: center;
+   color: #212353;
+}
+p.general {
+   font-family: 'Avenir';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 160%;
+   color: #4B5D68;
+}
+p#first {
+   width: 380px;
+   height: 120px;
+}
+#botton {
+   width: 170px;
+   height: 60px;
+   border: none;
+   background: #9C69E2;
+   border-radius: 50px;
+}
+#image1 {
+   /* width: 885px; */
+   /* height: 468px; */
+   background: url(image1.svg);
+   background-position: bottom right;
+   background-repeat: no-repeat;
+   width: 1248px;
+   height: 754px;
+}
+#div2 {
+   width: 1117px;
+   height: 560px;
+   background: rgba(240, 99, 184, 0.15);
+   border-radius: 50px;
+   margin: auto;
+}
+img#image2 {
+   width: 477px;
+   height: 504px;
+   float: left;
+}
