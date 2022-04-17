@@ -1,9 +1,11 @@
 const head = document.getElementById("top");
 head.innerHTML = (
-    `<div id="top-logo">
-        <div class="rectangle" id="rectangle1"></div>
-        <div class="rectangle" id="rectangle2"></div>
-    </div>
+    `<a href="index.html" style="text-decoration: none;">
+        <div id="top-logo">
+            <div class="rectangle" id="rectangle1"></div>
+            <div class="rectangle" id="rectangle2"></div>
+        </div>
+    </a>
     <nav id="navbar">
         <a href="#" class="nav-item nav-active">About</a>
         <a href="#" class="nav-item">Help</a>
