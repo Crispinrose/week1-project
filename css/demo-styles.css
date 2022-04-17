@@ -12,7 +12,7 @@
 
 @media (max-width: 650px) {
     * {
-        zoom: 100%;
+        zoom: 50%;
     }
 
     #demo {
