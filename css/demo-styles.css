@@ -2,12 +2,18 @@
     display: flex;
     margin-top: 100px;
     margin-bottom: 150px;
-	width: 1117px;
+	max-width: 1117px;
     height: 700px;
     background-color: rgb(234, 245, 251);
     /* background-blend-mode: darken; */
     border-radius: 50px;
     padding: 20px
+}
+
+@media (max-width: 650px) {
+    #demo {
+        width: 1117px;
+    }
 }
 
 #demo form {
