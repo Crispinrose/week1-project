@@ -11,10 +11,6 @@
 }
 
 @media (max-width: 650px) {
-    * {
-        zoom: 60%;
-    }
-
     #demo {
         width: 1117px;
     }
