@@ -18,7 +18,7 @@
             <form autocomplete="off">
                 <div id="form-item-id">
                     <label for="item-id">ID</label><br>
-                    <input type="number" name="item_id" id="item-id" onclick="editId();" readonly>
+                    <input type="text" name="item_id" id="item-id">
                 </div>
                 <div id="form-item-name">
                     <label for="item-name">Item Name</label><br>
@@ -30,7 +30,6 @@
                 </div>
                 <div id="demo-form-btns">
                     <input type="button" id="demo-add-btn" value="Add item" id="add-btn" onclick="storeItem();">
-                    <input type="button" id="demo-cancel-btn" value="Cancel Edit" id="cancel-btn" onclick="cancelEdit();">
                     <input type="button" id="demo-clear-btn" value="Clear table" onclick="clearStorage();">
                 </div>
             </form>
