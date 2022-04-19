@@ -31,10 +31,6 @@ function idIsUnique() {
     return true;
 }
 
-function modifyItemArr(id, name, price) {
-    
-}
-
 function storeItem() {
     if (itemId.value == "" || itemName.value == "" || itemPrice.value == "") {
         alert("No field should be left empty (price should be a number)");
