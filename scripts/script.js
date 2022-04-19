@@ -31,6 +31,10 @@ function idIsUnique() {
     return true;
 }
 
+function modifyItemArr(id, name, price) {
+    
+}
+
 function storeItem() {
     if (itemId.value == "" || itemName.value == "" || itemPrice.value == "") {
         alert("No field should be left empty (price should be a number)");
@@ -67,7 +71,7 @@ function addTableRecord(id, name, price) {
     clearForm();
 }
 
-(function populateTableOnLoad() {
+(function retrieveRecordsOnLoad() {
     let numberOfItems = itemArr.length;
     for (let i = 0; i < numberOfItems; i++) {
         addTableRecord(itemArr[i].item_id, itemArr[i].item_name, itemArr[i].item_price);
@@ -101,6 +105,18 @@ function updateRecord() {
         tableRowToEdit.childNodes[1].textContent = itemName.value;
         tableRowToEdit.childNodes[2].textContent = itemPrice.value;
         clearForm();
+    }
+}
+
+function addTenRandomRecords() {
+    if (confirm("This may override existing records, continue?")) {
+        let numberOfItems = itemArr.length;
+        for (let i = numberOfItems + 1; i < numberOfItems + 11; i++) {
+            itemId.value = i.toString().padStart(3, "0");
+            itemName.value = "Item " + i;
+            itemPrice.value = Math.floor(1000 + Math.random() * 1000);
+            storeItem();
+        }
     }
 }
 
