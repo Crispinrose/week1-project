@@ -79,11 +79,13 @@ function addTableRecord(id, name, price) {
 })()
 
 function deleteRow(deleteButton) {
-    let rowToDelete = deleteButton.parentElement.parentElement;
-    let deletionIndex = rowToDelete.rowIndex - 1;
-    itemArr.splice(deletionIndex, 1);
-    localStorage.setItem("items", JSON.stringify(itemArr));
-    rowToDelete.remove();
+    if (confirm("Delete this record?")) {
+        let rowToDelete = deleteButton.parentElement.parentElement;
+        let deletionIndex = rowToDelete.rowIndex - 1;
+        itemArr.splice(deletionIndex, 1);
+        localStorage.setItem("items", JSON.stringify(itemArr));
+        rowToDelete.remove();
+    }
 }
 
 function initiateEdit(editButton) {
