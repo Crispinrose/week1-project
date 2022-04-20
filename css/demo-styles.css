@@ -73,7 +73,9 @@ th {
     border-bottom: 1px solid #000;
     position: sticky;
     top: 0;
-    background-color: #fff;
+    height: 45px;
+    background-color: #212353;;
+    color: #FFF;
 }
 
 tr:nth-child(even) {
