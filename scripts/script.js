@@ -94,12 +94,10 @@ function initiateEdit(editButton) {
 
 function updateRecord() {
     if (confirm("ID exists, update this record?")) {
-        itemArr[conflictIndex].item_id = itemId.value;
         itemArr[conflictIndex].item_name = itemName.value;
         itemArr[conflictIndex].item_price = itemPrice.value;
         localStorage.setItem("items", JSON.stringify(itemArr));
         let tableRowToEdit = tableBody.childNodes[conflictIndex + 1];
-        tableRowToEdit.childNodes[0].textContent = itemId.value;
         tableRowToEdit.childNodes[1].textContent = itemName.value;
         tableRowToEdit.childNodes[2].textContent = itemPrice.value;
         clearForm();
@@ -118,7 +116,7 @@ function addTenRandomRecords() {
     }
 }
 
-document.addEventListener("keypress", e => {
+document.addEventListener("keypress", function(e) {
     if (e.keyCode == 13) {
         storeItem();
     }
