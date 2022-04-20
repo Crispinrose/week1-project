@@ -107,7 +107,7 @@ function updateRecord() {
 }
 
 function addTenRandomRecords() {
-    if (confirm("This may override existing records, continue?")) {
+    if (confirm("This may overwrite existing records, continue?")) {
         let numberOfItems = itemArr.length;
         for (let i = numberOfItems + 1; i < numberOfItems + 11; i++) {
             itemId.value = i.toString().padStart(3, "0");
